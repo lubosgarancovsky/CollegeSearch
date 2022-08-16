@@ -1,0 +1,95 @@
+.uni-card{
+    margin: 2rem;
+    color:rgb(21,21,38);
+    a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        background-color: white;
+        box-shadow: 0px 0px 8px 3px rgba(186, 186, 186, 0.233);
+        border-radius: 1rem;
+
+        &:hover{
+            background-color: #f5f5fc;
+        }
+    }
+
+    
+}
+
+.card-header{
+    color:rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .code{
+        font-size: 1.4rem;
+    }
+    .card-id{
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+}
+
+.code-w{
+    font-size: 1.5rem;
+}
+
+.country-w{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color:rgb(21,21,38);
+    height: 100%;
+    width: 100%;
+
+    .country{
+        font-weight: 300;
+        font-size: 1rem; 
+        margin-top: 0.5rem;
+    }
+
+    .title{
+        position: relative;
+        margin-top: 2rem;
+        width: 100%;
+        &::before{
+            content: '';
+            position: absolute;
+            left:0;top:-1rem;
+            width: 20%;
+            height: 0.15rem;
+            background-color: rgb(21,21,38);
+            border-radius: 2rem;
+        }
+    }
+}
+
+.card-id {
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width:800px){
+    .uni-card{
+        margin: 2rem auto;
+        width: 15rem;
+    }
+}

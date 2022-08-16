@@ -1,0 +1,43 @@
+nav{
+    padding: 4rem;
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0.2rem;
+            .active{
+                background-color: rgb(21,21,38);
+                color: #e9e9f5;
+            }
+            button{
+                text-decoration: none;
+                color:black;
+                padding: 1rem;
+                background-color: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    nav{
+        ul{
+            li{
+                button{
+                    &:hover{
+                        background-color: #f5f5fc;
+                        color:rgb(21,21,38);
+                    }
+                }
+            }
+        }
+    }
+}

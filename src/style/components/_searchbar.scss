@@ -1,0 +1,41 @@
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input{
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+        border: none;
+        margin: 0 0.2rem;
+        background-color: #d8d8e6;
+        color:rgb(21,21,38);
+    }
+    button{
+        color:white;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+        background: #2e2eff;
+        border: none;
+        margin: 0 0.2rem;
+        cursor: pointer;
+
+        &:hover{
+            background: #5757ff;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .searchbar{
+        display: grid;
+        gap:0.2rem;
+
+        button{
+
+            &:hover{
+                background-color: #2e2eff;
+            }
+        }
+    }
+}

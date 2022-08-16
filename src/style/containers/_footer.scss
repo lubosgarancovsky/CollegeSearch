@@ -1,0 +1,17 @@
+footer{
+    padding: 4rem;
+    margin: 8rem 0 0 0;
+    background: rgb(21,21,38);
+    background: linear-gradient(45deg, rgba(21,21,38,1) 0%, rgba(24,24,52,1) 100%);
+    p{
+        color:#e9e9f5;
+    }
+    a{
+        text-decoration: none;
+        color:#3c3cfa;
+
+        &:hover{
+            color:white;
+        }
+    }
+}
